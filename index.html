@@ -24,6 +24,17 @@
 
 </style>
 <body>
+  <div class="container">
+  <h1> ¿Cómo se clasifican las ballenas y los delfines dentro de la fauna Colombiana?  </h1>
+
+  <p> Se presenta el orden Cetacea, incluyendo ballenas, delfines y marsopas. Son los mamíferos más plenamente adaptados a la vida acuática con un cuerpo aguzado casi desprovisto de pelos, protegido por una gruesa capa de grasa, y extremidades delanteras y cola modificadas para proveer propulsión en el agua. (Wikipedia)</p>
+
+<fig> </fig>
+
+</div>
+
+</body>
+<link href="bootstrap.min.css" rel="stylesheet">
 <script src="//d3js.org/d3.v3.min.js"></script>
 <script>
 
@@ -41,7 +52,7 @@ var tree = d3.layout.tree()
 var diagonal = d3.svg.diagonal()
     .projection(function(d) { return [d.y, d.x]; });
 
-var svg = d3.select("body").append("svg")
+var svg = d3.select("fig").append("svg")
     .attr("width", width + margin.right + margin.left)
     .attr("height", height + margin.top + margin.bottom)
   .append("g")
